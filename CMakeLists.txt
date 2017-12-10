@@ -40,14 +40,8 @@ if(BUILD_TESTS)
 
   enable_testing()
 
-  add_test(CIPIC_subject_003_hrir_final ../tests/compare.sh ../tests/CIPIC_subject_003_hrir_final)
-  add_test(FHK_HRIR_L2354.sofa ../tests/compare.sh ../tests/FHK_HRIR_L2354)
-  add_test(LISTEN_1002_IRC_1002_C_HRIR.sofa ../tests/compare.sh ../tests/LISTEN_1002_IRC_1002_C_HRIR)
-  add_test(MIT_KEMAR_large_pinna.sofa ../tests/compare.sh ../tests/MIT_KEMAR_large_pinna)
   add_test(Pulse ../tests/compare.sh ../tests/Pulse)
   add_test(Tester ../tests/compare.sh ../tests/tester)
-  add_test(TU-Berlin_QU_KEMAR_anechoic_radius_0.5_1_2_3_m.sofa ../tests/compare.sh ../tests/TU-Berlin_QU_KEMAR_anechoic_radius_0.5_1_2_3_m)
-  add_test(TU-Berlin_QU_KEMAR_anechoic_radius_0.5m.sofa ../tests/compare.sh ../tests/TU-Berlin_QU_KEMAR_anechoic_radius_0.5m)
 endif(BUILD_TESTS)
 
 add_subdirectory(src)
