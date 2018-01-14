@@ -69,9 +69,12 @@ extern "C" {
 /* structure for lookup HRTF filters */
 	struct MYSOFA_LOOKUP {
 		void *kdtree;
-		float radius_min, radius_max;
-		float theta_min, theta_max;
-		float phi_min, phi_max;
+		float radius_min;
+		float radius_max;
+		float theta_min;
+		float theta_max;
+		float phi_min;
+		float phi_max;
 	};
 
 	struct MYSOFA_NEIGHBORHOOD {
